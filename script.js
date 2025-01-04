@@ -1,3 +1,17 @@
+/**
+ * Drum1 is a React functional component that renders a drum machine interface.
+ * It allows users to play different drum sounds by clicking buttons or pressing corresponding keys on the keyboard.
+ * 
+ * The component includes the following functionalities:
+ * - `playAudio(id)`: Plays the audio element with the given id.
+ * - `handleKeyDown(e)`: Handles keydown events and plays the corresponding audio.
+ * - `playMessage(id)`: Displays a message indicating which drum sound has been played.
+ * 
+ * The component uses `React.useEffect` to add and remove the keydown event listener.
+ * 
+ * The rendered interface includes buttons for each drum sound, each with an associated audio element.
+ * Clicking a button or pressing the corresponding key will play the associated drum sound and display a message.
+ */
 const Drum1 = () => {
     const playAudio = (id) => {
         const audio = document.getElementById(id);
